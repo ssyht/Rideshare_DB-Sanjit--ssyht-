@@ -74,7 +74,10 @@ cd web
 
 ## Sample Tests: 
 
-* You can sample test it using the synthetic data that is present in the ``Data`` folder within in this GitHub Repository. 
+* You can sample test it using the synthetic data that is present in the ``Data`` folder within in this GitHub Repository.
+
+
+By Sanjit Subhash - University of Missouri Columbia
 
 
 
