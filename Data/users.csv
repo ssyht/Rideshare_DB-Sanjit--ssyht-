@@ -1,0 +1,6 @@
+user_id,name,email,phone,role,created_at,avg_rating
+1,John Miller,john.miller@example.com,555-1010,driver,2025-12-07 17:35:09,4.80
+2,Sarah Kim,sarah.kim@example.com,555-2020,passenger,2025-12-07 17:35:09,4.60
+3,David Lee,david.lee@example.com,555-3030,both,2025-12-07 17:35:09,4.90
+4,Emily Rodriguez,emily.r@example.com,555-4040,passenger,2025-12-07 17:35:09,4.70
+5,Michael Brown,mike.b@example.com,555-5050,driver,2025-12-07 17:35:09,4.50

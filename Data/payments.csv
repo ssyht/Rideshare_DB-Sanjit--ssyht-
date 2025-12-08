@@ -1,0 +1,5 @@
+payment_id,reservation_id,payer_user_id,amount,method,status,paid_at
+1,1,2,25.00,card,captured,2025-12-01 10:00:00
+2,3,2,60.00,paypal,captured,2025-12-02 14:05:00
+3,4,4,15.00,cash,captured,2025-12-03 09:20:00
+5,2,4,25.00,card,captured,2025-12-07 18:09:29

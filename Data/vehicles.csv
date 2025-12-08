@@ -1,0 +1,4 @@
+vehicle_id,owner_user_id,plate_no,make,model,year,color,capacity
+1,1,ABC123,Toyota,Camry,2018,Silver,4
+2,3,XYZ789,Honda,Civic,2020,Blue,4
+3,5,JKL456,Tesla,Model 3,2021,White,5

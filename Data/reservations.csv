@@ -1,0 +1,5 @@
+reservation_id,trip_id,passenger_user_id,seats_reserved,reserved_at,status
+1,1,2,1,2025-12-07 17:35:09,confirmed
+2,1,4,1,2025-12-07 17:35:09,pending
+3,2,2,2,2025-12-07 17:35:09,confirmed
+4,3,4,1,2025-12-07 17:35:09,confirmed

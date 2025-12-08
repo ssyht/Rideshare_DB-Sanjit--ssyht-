@@ -1,0 +1,4 @@
+feedback_id,trip_id,reviewer_user_id,reviewee_user_id,rating,comments,created_at
+1,1,2,1,5,"Great driver, smooth ride!",2025-12-07 17:35:09
+2,2,2,3,4,Comfortable trip. A bit delayed leaving.,2025-12-07 17:35:09
+3,3,4,5,5,Fast and clean car!,2025-12-07 17:35:09
