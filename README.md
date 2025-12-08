@@ -11,6 +11,9 @@ This repo contains all the required files from the Phase 3: Application for the 
 * A console-based application
 * A Flask Web UI
 
+
+For successful setup, clone this repository to your local device
+
 ## 1.1 Connection Used for this Project: 
 ```bash
 host: 127.0.0.1
