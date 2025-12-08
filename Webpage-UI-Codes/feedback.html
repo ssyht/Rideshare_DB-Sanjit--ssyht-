@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Leave Feedback</h3>
+
+<form method="post" class="mt-3">
+    <input class="form-control mb-2" name="trip_id" placeholder="Trip ID">
+    <input class="form-control mb-2" name="reviewer" placeholder="Reviewer User ID">
+    <input class="form-control mb-2" name="reviewee" placeholder="Reviewee User ID">
+    <input class="form-control mb-2" name="rating" placeholder="Rating 1–5">
+    <textarea class="form-control mb-3" name="comments" placeholder="Comments"></textarea>
+    <button class="btn btn-info">Submit Feedback</button>
+</form>
+{% endblock %}
+
