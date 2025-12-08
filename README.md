@@ -61,8 +61,7 @@ pip install -r requirements.txt
 * Change the directory within the same terminal:
 
 ```bash
-cd web
-(venv) python app.py
+python3 web/flask_app.py
 ```
 
 * You should see:
