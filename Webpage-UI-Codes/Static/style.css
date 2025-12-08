@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.list-group-item {
+    background: #222;
+    color: white;
+}
+
+.list-group-item:hover {
+    background: #333;
+}
+
