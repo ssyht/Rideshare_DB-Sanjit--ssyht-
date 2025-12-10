@@ -87,7 +87,74 @@ FROM reservations
 ORDER BY reservation_id DESC;
 ```
 
-### 
+### To See a Specific Reservation
+
+```sql
+SELECT reservation_id, trip_id, seats_reserved, status, reserved_at
+FROM reservations
+WHERE passenger_user_id = 2
+ORDER BY reserved_at DESC;
+```
+
+### After Making Payment
+
+```sql
+SELECT payment_id, reservation_id, payer_user_id, amount, method, status, paid_at
+FROM payments
+ORDER BY payment_id DESC;
+```
+
+### Payment for a specific reservation
+
+```sql
+SELECT payment_id, reservation_id, payer_user_id, amount, method, status, paid_at
+FROM payments
+WHERE reservation_id = 2;   -- change 2 to whatever you tested
+```
+
+### Join reservation + payment
+
+```sql
+SELECT 
+    p.payment_id,
+    p.reservation_id,
+    u.name AS payer_name,
+    p.amount,
+    p.method,
+    p.status,
+    p.paid_at
+FROM payments p
+JOIN users u ON u.user_id = p.payer_user_id
+ORDER BY p.payment_id DESC;
+```
+
+### After Leaving Feedback
+
+```sql
+SELECT feedback_id, trip_id, reviewer_user_id, reviewee_user_id, rating, comments, created_at
+FROM feedback
+ORDER BY feedback_id DESC;
+```
+
+***To see feedback for one trip:***
+
+```sql
+SELECT feedback_id, reviewer_user_id, reviewee_user_id, rating, comments, created_at
+FROM feedback
+WHERE trip_id = 1  
+ORDER BY feedback_id DESC;
+```
+
+
+
+
+
+
+
+
+
+
+
 
 By Sanjit Subhash - University of Missouri Columbia
 
