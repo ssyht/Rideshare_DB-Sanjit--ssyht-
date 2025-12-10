@@ -1,29 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-<h3>Available Trips</h3>
 
-<table class="table table-dark table-striped mt-3">
-    <tr>
-        <th>ID</th>
-        <th>Origin</th>
-        <th>Destination</th>
-        <th>Depart</th>
-        <th>Seats</th>
-        <th></th>
-    </tr>
+<h1>{{ message }}</h1>
+<p style="margin-top:15px; font-size:18px;">{{ highlight }}</p>
 
-    {% for t in trips %}
-    <tr>
-        <td>{{ t.trip_id }}</td>
-        <td>{{ t.origin }}</td>
-        <td>{{ t.destination }}</td>
-        <td>{{ t.departure_time }}</td>
-        <td>{{ t.seat_total }}</td>
-        <td>
-            <a class="btn btn-warning btn-sm" href="/reserve/{{ t.trip_id }}">Reserve</a>
-        </td>
-    </tr>
-    {% endfor %}
-</table>
+<a href="/"><button class="action-btn" style="margin-top:30px;">Return Home</button></a>
+
 {% endblock %}
-
