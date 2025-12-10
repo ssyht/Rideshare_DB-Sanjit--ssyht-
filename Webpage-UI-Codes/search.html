@@ -1,11 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
-<h3>Search Trips</h3>
 
-<form method="post" class="mt-4">
-    <input class="form-control mb-2" name="origin" placeholder="Origin">
-    <input class="form-control mb-2" name="destination" placeholder="Destination">
-    <button class="btn btn-success">Search</button>
-</form>
+<h1>Available Trips</h1>
+
+{% for t in trips %}
+<div class="glass-card" style="margin-top:25px;">
+    <h2>Trip #{{ t.trip_id }}</h2>
+    <p><strong>Origin:</strong> {{ t.origin }}</p>
+    <p><strong>Destination:</strong> {{ t.destination }}</p>
+    <p><strong>Departure:</strong> {{ t.departure_time }}</p>
+    <p><strong>Price/Seat:</strong> ${{ t.seat_price }}</p>
+
+    <a href="/reserve/{{ t.trip_id }}">
+        <button class="action-btn">Reserve This Trip</button>
+    </a>
+</div>
+{% endfor %}
+
 {% endblock %}
+
 
