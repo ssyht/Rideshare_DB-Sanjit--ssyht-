@@ -1,10 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<h3>Cancel Reservation</h3>
 
-<form method="post" class="mt-3">
-    <input class="form-control mb-3" name="reservation_id" placeholder="Reservation ID">
-    <button class="btn btn-danger">Cancel</button>
+<h1>Cancel Reservation</h1>
+
+<form action="/cancel_confirm" method="POST">
+    <label>Reservation ID:</label>
+    <input name="reservation_id" required>
+
+    <button class="action-btn">Cancel Reservation</button>
 </form>
+
 {% endblock %}
 
