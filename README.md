@@ -145,8 +145,23 @@ WHERE trip_id = 1
 ORDER BY feedback_id DESC;
 ```
 
+### After Canceling a Reservation
 
+```sql
+SELECT reservation_id, trip_id, passenger_user_id, seats_reserved, status, reserved_at
+FROM reservations
+WHERE reservation_id = 2;  -- or whatever you just cancelled
+```
 
+***Should see status = cancelled***
+
+### To See All Cancelled Ones
+
+```sql
+SELECT reservation_id, trip_id, passenger_user_id, seats_reserved, status
+FROM reservations
+WHERE status = 'cancelled';
+```
 
 
 
