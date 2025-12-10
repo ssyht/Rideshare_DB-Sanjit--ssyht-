@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<h2 class="text-center">RideShare Web UI</h2>
 
-<div class="list-group mt-4">
-    <a href="/search" class="list-group-item list-group-item-action">Search Trips</a>
-    <a href="/payment" class="list-group-item list-group-item-action">Make Payment</a>
-    <a href="/feedback" class="list-group-item list-group-item-action">Leave Feedback</a>
-    <a href="/cancel" class="list-group-item list-group-item-action">Cancel Reservation</a>
-</div>
+<h1>Welcome to RideShare</h1>
+<p>Select an option below:</p>
+
+<a href="/search"><button class="action-btn"> Search Trips</button></a>
+<a href="/payment"><button class="action-btn"> Make Payment</button></a>
+<a href="/feedback"><button class="action-btn"> Leave Feedback</button></a>
+<a href="/cancel"><button class="action-btn"> Cancel Reservation</button></a>
+
 {% endblock %}
+
 
