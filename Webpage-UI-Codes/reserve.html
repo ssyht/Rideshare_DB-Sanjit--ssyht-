@@ -1,11 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-<h3>Reserve Trip #{{ trip_id }}</h3>
 
-<form method="post" class="mt-3">
-    <input class="form-control mb-3" name="user_id" placeholder="User ID">
-    <input class="form-control mb-3" name="seats" placeholder="Number of Seats">
-    <button class="btn btn-primary">Reserve</button>
+<h1>Reserve Trip #{{ trip.trip_id }}</h1>
+
+<p><strong>Origin:</strong> {{ trip.origin }}</p>
+<p><strong>Destination:</strong> {{ trip.destination }}</p>
+<p><strong>Departure:</strong> {{ trip.departure_time }}</p>
+<p><strong>Price:</strong> ${{ trip.seat_price }}</p>
+<p><strong>Total Seats:</strong> {{ trip.seat_total }}</p>
+
+<form action="/reserve_confirm" method="POST">
+
+    <input type="hidden" name="trip_id" value="{{ trip.trip_id }}">
+
+    <label>Your User ID:</label>
+    <input type="number" name="user_id" required>
+
+    <label>Seats to Reserve:</label>
+    <input type="number" name="seats" required>
+
+    <button class="action-btn" type="submit">Confirm Reservation</button>
 </form>
-{% endblock %}
 
+{% endblock %}
