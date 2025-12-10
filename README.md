@@ -79,6 +79,16 @@ python3 web/flask_app.py
 * You can sample test it using the synthetic data that is present in the ``Data`` folder within in this GitHub Repository.
 
 
+### Reservations
+
+```sql
+SELECT reservation_id, trip_id, passenger_user_id, seats_reserved, status, reserved_at
+FROM reservations
+ORDER BY reservation_id DESC;
+```
+
+### 
+
 By Sanjit Subhash - University of Missouri Columbia
 
 
